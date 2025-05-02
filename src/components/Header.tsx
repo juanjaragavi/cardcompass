@@ -8,19 +8,22 @@ import {
 } from "@/components/ui/sheet";
 import { config } from "@/config";
 import { cn } from "@/lib/utils";
-import { Menu } from "lucide-react";
+import { Menu, Compass } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FunctionComponent } from "react";
+
 interface MenuItem {
   name: string;
   href: string;
   openInNewTab?: boolean;
 }
+
 const menuItems: MenuItem[] = [
   { name: "Blog", href: "/" },
   { name: "About", href: "/about" },
 ];
+
 export const Navigation: FunctionComponent = () => {
   const pathname = usePathname();
 
@@ -33,7 +36,7 @@ export const Navigation: FunctionComponent = () => {
               href={item.href}
               target={item.openInNewTab ? "_blank" : "_self"}
               className={cn(
-                "hover:text-gray-900",
+                "text-themeText-primary hover:text-themeText-accent transition-colors duration-200",
                 pathname === item.href && "font-semibold"
               )}
             >
@@ -45,7 +48,7 @@ export const Navigation: FunctionComponent = () => {
       <div className="md:hidden">
         <Sheet>
           <SheetTrigger>
-            <Menu size="24" />
+            <Menu size="24" className="text-themeText-primary" />
           </SheetTrigger>
           <SheetContent>
             <SheetHeader>
@@ -56,7 +59,7 @@ export const Navigation: FunctionComponent = () => {
                     href={item.href}
                     target={item.openInNewTab ? "_blank" : "_self"}
                     className={cn(
-                      "block py-2",
+                      "block py-2 text-themeText-primary hover:text-themeText-accent transition-colors duration-200",
                       pathname === item.href && "font-semibold"
                     )}
                   >
@@ -75,8 +78,12 @@ export const Navigation: FunctionComponent = () => {
 export const Header: FunctionComponent = () => {
   return (
     <section className="flex items-center justify-between mt-8 md:mt-16 mb-12">
-      <Link href="/">
-        <h1 className="text-4xl md:text-6xl font-bold tracking-tighter leading-tight">
+      <Link href="/" className="flex items-center">
+        <Compass
+          className="h-8 w-8 mr-2 text-themeText-accent"
+          strokeWidth={2}
+        />
+        <h1 className="text-4xl md:text-6xl font-bold tracking-tighter leading-tight text-themeText-primary">
           {config.blog.name}
         </h1>
       </Link>

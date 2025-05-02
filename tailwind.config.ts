@@ -53,6 +53,20 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // CardCompass brand colors
+        cardcompass: {
+          navy: "#1A365D",
+          coral: "#FF7F50",
+          lightGray: "#F5F7FA",
+          slateGray: "#708090",
+          white: "#FFFFFF",
+        },
+        // Theme-sensitive text colors
+        themeText: {
+          primary: "var(--theme-text-primary)",
+          secondary: "var(--theme-text-secondary)",
+          accent: "var(--theme-text-accent)",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -75,6 +89,11 @@ const config = {
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
+        heading: ["var(--font-heading)", ...fontFamily.sans],
+        body: ["var(--font-body)", ...fontFamily.sans],
+      },
+      boxShadow: {
+        card: "0 2px 4px rgba(0, 0, 0, 0.1)",
       },
     },
   },
