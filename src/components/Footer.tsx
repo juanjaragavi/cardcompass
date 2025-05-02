@@ -73,8 +73,8 @@ export const Footer: FunctionComponent = () => {
         ))}
       </div>
 
-       {/* Tagline */}
-       <div className="text-md text-themeText-secondary text-center mb-4">
+      {/* Tagline */}
+      <div className="text-md text-themeText-secondary text-center mb-4">
         <span className="block font-semibold">
           CardCompass - Navigate Your Perfect Card
         </span>
