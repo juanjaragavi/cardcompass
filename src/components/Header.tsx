@@ -8,10 +8,12 @@ import {
 } from "@/components/ui/sheet";
 import { config } from "@/config";
 import { cn } from "@/lib/utils";
-import { Menu, Compass } from "lucide-react";
+import { Menu } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { FunctionComponent } from "react";
+import { FunctionComponent, useEffect, useState } from "react";
+import { useTheme } from "next-themes";
 
 interface MenuItem {
   name: string;
@@ -76,14 +78,32 @@ export const Navigation: FunctionComponent = () => {
 };
 
 export const Header: FunctionComponent = () => {
+  const { resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   return (
     <section className="flex items-center justify-between mt-8 md:mt-16 mb-12">
       <Link href="/" className="flex items-center">
-        <Compass
-          className="h-8 w-8 mr-2 text-themeText-accent"
-          strokeWidth={2}
-        />
-        <h1 className="text-4xl md:text-6xl font-bold tracking-tighter leading-tight text-themeText-primary">
+        {mounted ? (
+          <Image
+            src={
+              resolvedTheme === "dark"
+                ? "/images/cardcompass-logo-dark.webp"
+                : "/images/cardcompass-logo-light.webp"
+            }
+            alt="CardCompass Logo"
+            width={80}
+            height={80}
+            className="mr-2"
+          />
+        ) : (
+          <div className="h-8 w-8 mr-2 bg-transparent" /> /* Placeholder while loading */
+        )}
+        <h1 className="text-xl md:text-3xl font-bold tracking-tighter leading-tight text-themeText-primary">
           {config.blog.name}
         </h1>
       </Link>
