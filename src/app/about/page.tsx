@@ -4,27 +4,42 @@ import { config } from "@/config";
 import { signOgImageUrl } from "@/lib/og-image";
 import Markdown from "react-markdown";
 
-const content = `# About Me
+const content = `# CardCompass: Your Guide to Smarter Credit Card Choices
 
-![Samantha](https://imagedelivery.net/lLmNeOP7HXG0OqaG97wimw/deac0abc-c078-484a-8896-463846d722a0/db7abbe3-aa5c-433e-a16d-cbf137d1c9e5.png/public)
+![CardCompass Team](/images/cardcompass-team.jpg)
 
-Hey there! I'm Samantha, a 28-year-old former corporate warrior who decided to ditch the 9-to-5 grind and embark on an adventure of a lifetime. After years of hustling in a high-pressure job, I realized that life is too short to be stuck in an office, staring at spreadsheets all day.
+Navigating the world of credit cards can feel like charting unknown waters. With countless options, complex terms, confusing rewards programs, and varying fees, finding the *right* card often feels overwhelming. Do you prioritize cashback, travel miles, low interest rates, or building credit? How do you cut through the marketing jargon to see what truly matters for *your* wallet?
 
-So I took a leap of faith, quit my cushy job in Singapore, and decided to see the world on my own terms. No more stuffy meetings or rigid schedules – just me, my backpack, and an open road ahead.
+**That's why we built CardCompass.**
 
-![Samantha](https://imagedelivery.net/lLmNeOP7HXG0OqaG97wimw/deac0abc-c078-484a-8896-463846d722a0/6b080e65-2329-4a36-ad5c-0a6af8d9aeb1.png/public)
+We believe choosing a credit card shouldn't be a game of chance. CardCompass is your independent, easy-to-use navigator designed to bring clarity and confidence to your financial journey. We're here to simplify the complex, compare the options, and empower you to find the credit card that perfectly aligns with your spending habits, financial goals, and lifestyle.
 
-This blog is where I'll be documenting my travels, sharing my experiences, and hopefully inspiring others to follow their wanderlust. From trekking through remote villages to savoring local cuisines, I'm on a mission to immerse myself in different cultures and create memories that will last a lifetime.
+**Our Mission:**
 
-But this journey isn't just about checking off destinations from a bucket list. It's about self-discovery, personal growth, and finding the courage to live life on my own terms. I'll be honest and raw, sharing the highs and lows, the moments of pure bliss and the inevitable challenges that come with solo travel.
+To demystify the credit card landscape, providing clear, unbiased information and intuitive tools that help everyone make smarter, more informed financial decisions.
 
-So join me on this adventure, and let's explore the world together! Who knows, maybe my stories will inspire you to take that leap of faith and pursue your own dreams, whatever they may be.
+**How CardCompass Guides You:**
 
-Let's go on an adventure!
+*   **Simplified Search:** Tell us what's important to you – rewards, low APR, balance transfers, travel perks, or building credit – and we'll help narrow down the options.
+*   **Clear Comparisons:** We lay out the essential details – fees, interest rates, rewards structures, sign-up bonuses, and key benefits – side-by-side, making it easy to weigh your choices.
+*   **Unbiased Information:** We strive to present objective data, cutting through the hype to focus on the facts that impact your bottom line.
+*   **Educational Resources:** Understanding terms like APR, credit scores, and balance transfers is crucial. We aim to provide resources that help you grasp these concepts. (Future goal/Implied value)
 
-Love,
+![CardCompass User](https://imagedelivery.net/lLmNeOP7HXG0OqaG97wimw/deac0abc-c078-484a-8896-463846d722a0/4c342534-6124-45e2-ab26-dddbf0459ad6.png/public)
 
-Samantha`;
+**Who We Serve:**
+
+CardCompass is for everyone seeking clarity in their credit card search:
+
+*   **First-timers:** Getting your first card? We'll help you understand the basics and find a great starter option.
+*   **Rewards Maximizers:** Looking to earn more points or cashback on your everyday spending? We'll help you compare programs.
+*   **Travel Enthusiasts:** Seeking the best travel perks, lounge access, or airline/hotel points? Navigate the options here.
+*   **Debt Managers:** Exploring balance transfer offers or low-interest cards to manage debt? Find cards designed to help.
+*   **Credit Builders:** Need a card to establish or rebuild your credit history? We can point you in the right direction.
+
+**Chart Your Course with Confidence:**
+
+Stop feeling adrift in a sea of credit card offers. Let CardCompass be your guide. Start exploring, comparing, and find the card that’s truly right for you today.`;
 
 export async function generateMetadata() {
   return {
