@@ -1,5 +1,4 @@
-feat: Enhance homepage layout and add banner image
+feat: Add 'Latest Articles' title to homepage
 
-- Modify src/app/page.tsx to include a hero banner with an image and introductory text.
-- Rearrange homepage content to display banner and intro text before blog post previews.
-- Add new banner image public/images/cardcompass-banner-image.jpeg.
+- Add a new H2 title 'Latest Articles' before the blog post previews on the homepage (src/app/page.tsx).
+- This enhances the structure and professional look of the page.
