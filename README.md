@@ -1,10 +1,10 @@
-# A Next.js 15 Blog using Server Components - Backed by Wisp CMS<!-- omit in toc -->
+# CardCompass: A Next.js 15 Blog using Server Components - Backed by Wisp CMS<!-- omit in toc -->
 
-[![Demo Travel Blog on Next.js 15](https://imagedelivery.net/lLmNeOP7HXG0OqaG97wimw/deac0abc-c078-484a-8896-463846d722a0/32432ccf-57a8-4992-8c51-e5a47e110018.png/public "Demo Travel Blog on Next.js 15")](https://nextjs-blog-cms-wisp.vercel.app/)
+[![CardCompass | Navigate your Financial Life](public/images/cardcompass-logo-footer-light.webp "Demo Travel Blog on Next.js 15")](https://nextjs-blog-cms-wisp.vercel.app/)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FWisp-CMS%2Fnextjs-blog-cms-wisp&env=NEXT_PUBLIC_BLOG_ID&envDescription=Blog%20ID%20obtained%20from%20the%20Setup%20Page%20on%20Wisp%20CMS&demo-title=Demo%20Travel%20Blog&demo-description=Demo%20travel%20blog%20using%20Nextjs%2015%20Server%20Component&demo-url=https%3A%2F%2Fnextjs-blog-cms-wisp.vercel.app%2F&demo-image=https%3A%2F%2Fimagedelivery.net%2FlLmNeOP7HXG0OqaG97wimw%2Fdeac0abc-c078-484a-8896-463846d722a0%2F32432ccf-57a8-4992-8c51-e5a47e110018.png%2Fpublic)
 
-**Featured Links**
+## Featured Links
 
 - [Demo Blog](https://blog-demo.wisp.blog/)
 - [Feature Walkthrough](https://youtu.be/7wVYAGhDmdY)
@@ -12,9 +12,9 @@
 - [Documentation](https://www.wisp.blog/docs/next-js-blog-starter-kit/overview)
 - [Video Tutorial](https://www.wisp.blog/docs/next-js-blog-starter-kit/running-blog)
 
-This is a [Next.js](https://nextjs.org/docs/getting-started/installation), [Tailwind CSS](https://tailwindcss.com/), [Shadcn](https://ui.shadcn.com/) blogging starter template. This version is using Next.js 15 App Router with [React Server Components](https://nextjs.org/docs/getting-started/react-essentials#server-components) and uses [Wisp](https://wisp.blog/?utm_source=github&utm_medium=web&utm_campaign=nextjs-blog-cms-wisp) for publishing blog posts.
+CardCompass is a [Next.js](https://nextjs.org/docs/getting-started/installation), [Tailwind CSS](https://tailwindcss.com/), [Shadcn](https://ui.shadcn.com/) blogging starter template. This version is using Next.js 15 App Router with [React Server Components](https://nextjs.org/docs/getting-started/react-essentials#server-components) and uses [Wisp](https://wisp.blog/?utm_source=github&utm_medium=web&utm_campaign=nextjs-blog-cms-wisp) for publishing blog posts.
 
-Probably the most feature-rich Next.js blog template out there that is easily configurable and customizable. It's perfect as an upgrade from blogs using Jekyll, Hugo, Gatsby, Contentlayer, or ContentCollections.
+CardCompass aims to be a highly feature-rich Next.js blog template that is easily configurable and customizable. It's an excellent choice for upgrading blogs previously built with Jekyll, Hugo, Gatsby, Contentlayer, or ContentCollections.
 
 ## About Wisp
 

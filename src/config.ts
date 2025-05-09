@@ -5,7 +5,9 @@ const buildConfig = () => {
   const copyright = process.env.NEXT_PUBLIC_BLOG_COPYRIGHT || "Samantha";
   const defaultTitle =
     process.env.NEXT_DEFAULT_METADATA_DEFAULT_TITLE || "Travel with Samantha";
-  const defaultDescription = process.env.NEXT_PUBLIC_BLOG_DESCRIPTION || "Blog about travel and lifestyle.";
+  const defaultDescription =
+    process.env.NEXT_PUBLIC_BLOG_DESCRIPTION ||
+    "Blog about travel and lifestyle.";
 
   return {
     baseUrl: process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000",
